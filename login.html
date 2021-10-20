@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+      <div>Master<span>Info</span></div>
+    </div>
+    <br />
+    <form name="form" action="videos.html">
+      <div class="login">
+        <input type="text" name="login" placeholder="Usuario" />
+        <input type="password" name="password" placeholder="Password" /><br />
+        <input onclick="go()" type="button" value="Acceder" class="btn-layer" />
+      </div>
+    </form>
+    <script language="JavaScript">
+      function go() {
+        if (
+          document.form.password.value == "12345" &&
+          document.form.login.value == "sebastian"
+        ) {
+          document.form.submit();
+        } else {
+          alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+        }
+      }
+    </script>
+  </body>
+</html>
